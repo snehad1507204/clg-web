@@ -1,0 +1,36 @@
+.section {
+  padding: 30px 20px;
+  background: #f5f5f5;
+  margin: 10px 0;
+}
+
+.section h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.footer {
+  background: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}

@@ -1,0 +1,20 @@
+.hero {
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image ko stretch na karke crop karega */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero-img {
+    height: auto;        
+    max-height: 60vh;    
+    object-fit: contain; 
+  }
+}
