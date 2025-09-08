@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Courses Container */
+.courses-container1 {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Course Cards Container */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Course Cards */
+.course-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background-color: #64a5e6;
+  color: white;
+  transition: background 0.9s ease-in-out;
+}
+
+.course-img {
+  width: 40%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 20px;
+  width: 100%;
+}
+
+.course-content h2 {
+  color: #00070b;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.course-card:hover .course-content h2 {
+  color: white;
+}
+
+.course-content p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.course-card:hover .course-content p {
+  color: white;
+}
+
+.course-content ul {
+  list-style: none;
+}
+
+.course-content ul li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.course-content ul li::before {
+  content: "✔";
+  color: #0077cc;
+  position: absolute;
+  left: 0;
+}
+
+.course-card:hover .course-content ul li::before {
+  color: gold;
+}
+
+/* Highlights */
+.course-highlights {
+  margin-top: 50px;
+  background: #0077cc;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.course-highlights h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.course-highlights ul {
+  list-style: none;
+}
+
+.course-highlights ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.course-highlights ul li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  color: gold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-card {
+    flex-direction: column;
+  }
+
+  .course-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .course-content {
+    width: 100%;
+  }
+}
