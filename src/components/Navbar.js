@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import { Link, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/logo2.png";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Courses from "../pages/Courses";
-import FreeCourses from "../pages/FreeCourses";
-import Faculty from "../pages/Faculty";
-import Contact from "../pages/Contact";
-import Admission from "../pages/Admission";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +36,7 @@ const Navbar = () => {
             }}>Admission▾</a>
           <ul className={`dropdown-menu ${admissionOpen ? "show" : ""}`}>
             <li><Link to="/courses">Courses</Link></li>
-            <li><Link to="/admission">Eligibility</Link></li>
+            <li><Link to="/eligibility">Eligibility</Link></li>
             <li><Link to="/admission">Admission Process</Link></li>
             <li><Link to="/admission">Admission Query</Link></li>
             <li><Link to="/admission">Scholarship</Link></li>
@@ -56,17 +49,6 @@ const Navbar = () => {
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
-
-    {/* Routes */}
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/courses" element={<Courses />} />
-      <Route path="/free-courses" element={<FreeCourses />} />
-      <Route path="/faculty" element={<Faculty />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/admission" element={<Admission />} />
-    </Routes>
     </>
   );
 };
