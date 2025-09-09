@@ -26,6 +26,7 @@ body {
   color: #ccc;
   /* font-family: 'Segoe UI', Tahoma, sans-serif; */
   line-height: 1.6;
+  margin-top: auto;
 }
 
 /* ===== Footer Top ===== */
@@ -103,21 +104,28 @@ body {
 .contact-item {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 5px;
-  margin-bottom: 12px;
+  justify-content: center;
+  gap: 0.3rem;        /* ~5px */
+  margin-bottom: 0.75rem; /* ~12px */
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
+
 .contact-item svg {
   color: #ffd700;
   font-size: 1.1rem;
   flex-shrink: 0;
+  transition: color 0.3s ease;
 }
+
 .contact-item a {
   color: #ccc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
-.contact-item a:hover {
+
+.contact-item a:hover,
+.contact-item:hover svg {
   color: #fff;
 }
 
@@ -145,33 +153,36 @@ body {
   color: #000;
 }
 
-/* Newsletter */
-.newsletter h4 {
-  color: #f39c12;
-  margin-bottom: 10px;
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  padding: 20px 20px;
+  background: #1a1a1a;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-.newsletter-input {
+.footer-bottom-content {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 4px;
-  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
 }
-.newsletter-input input {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  outline: none;
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.footer-bottom-links {
+  display: flex;
+  gap: 15px;
+}
+.footer-bottom-links a {
+  color: #ccc;
+  text-decoration: none;
   font-size: 0.9rem;
 }
-.newsletter-input button {
-  background: #ffd700;
-  border: none;
-  padding: 0 12px;
-  cursor: pointer;
-  color: #000;
-  font-size: 1rem;
+.footer-bottom-links a:hover {
+  color: #fff;
 }
-
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
@@ -183,5 +194,18 @@ body {
     flex-direction: column;
     text-align: center;
   }
-  
 }
+
+/* ===== Sticky Footer Fix ===== */
+html, body {
+  height: 100%;
+}
+
+.app {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+  

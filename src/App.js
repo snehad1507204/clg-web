@@ -9,6 +9,8 @@ import Eligibility from './pages/Eligibility';
 import Admission from './pages/Admission';
 import Faculty from './pages/Faculty';
 import FreeCourses from './pages/FreeCourses';
+import ComputerBasics from './pages/ComputerBasics';
+import EnglishSpeaking from './pages/EnglishSpeaking';
 import Contact from './pages/Contact';
 import './styles/main.css';
 
@@ -27,6 +29,8 @@ function App() {
             <Route path="/admission" element={<Admission />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/free-courses" element={<FreeCourses />} />
+            <Route path="/computer-basics" element={<ComputerBasics />} />
+            <Route path="/english-speaking" element={<EnglishSpeaking />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -4,15 +4,26 @@ import heroImage from '../assets/hero.jpg';
 import newGif from '../images/new.gif';
 import noticeImg from '../images/notice-board-img.png';
 
+// Reusable News/Notice/Event Item component
+const ListItemWithIcon = ({ icon, text }) => (
+  <li>
+    {icon && <img src={icon} alt="Icon" />} {text}
+  </li>
+);
+
 
 function Home() {
   return (
     <>
       {/* Top News Header */}
       <div className="headquote-container">
-        <marquee className="headquote" behavior="scroll" direction="left" scrollamount="10" loop="infinite">
-          Education is the key to success, and at Sw. Narendra Singh Mahavidyalaya we unlock every student's potential. Education is the most powerful weapon which you can use to change the world
-        </marquee>
+        <div className="headquote-scroll">
+          <p>
+            Education is the key to success, and at Sw. Narendra Singh Mahavidyalaya we unlock every
+            student's potential. Education is the most powerful weapon which you can use to change
+            the world.
+          </p>
+        </div>
       </div>
 
       {/* Hero Slider */}
@@ -27,18 +38,18 @@ function Home() {
           <div className="heading-sect">
             <h3 className="head-title">Latest News</h3>
           </div>
-          <marquee direction="up" scrollamount="3">
+          <div className="vertical-scroll">
             <ul className="latest-news-ul">
-              <li>Admissions 2025 last date: 25 Aug. <img src={newGif} alt="New" /></li>
-              <li>B.A., B.Sc., B.Ed. classes start: 1 Sept. <img src={newGif} alt="New" /></li>
-              <li>Orientation Program: 3 Sept. <img src={newGif} alt="New" /></li>
-              <li>Library renovation completed. <img src={newGif} alt="New" /></li>
-              <li>Scholarship forms till 15 Sept. <img src={newGif} alt="New" /></li>
-              <li>NSS enrollment starts 20 Aug. <img src={newGif} alt="New" /></li>
-              <li>Annual Sports Meet in Oct. <img src={newGif} alt="New" /></li>
-              <li>Internal Exams in Nov. <img src={newGif} alt="New" /></li>
+              <ListItemWithIcon icon={newGif} text="Admissions 2025 last date: 25 Aug." />
+              <ListItemWithIcon icon={newGif} text="B.A., B.Sc., B.Ed. classes start: 1 Sept." />
+              <ListItemWithIcon icon={newGif} text="Orientation Program: 3 Sept." />
+              <ListItemWithIcon icon={newGif} text="Library renovation completed. " />
+              <ListItemWithIcon icon={newGif} text="Scholarship forms till 15 Sept." />
+              <ListItemWithIcon icon={newGif} text="NCC enrollment starts 20 Aug." />
+              <ListItemWithIcon icon={newGif} text="Annual Sports Meet in Oct." />
+              <ListItemWithIcon icon={newGif} text="Internal Exams in Nov." />
             </ul>
-          </marquee>
+          </div>
         </div>
 
         {/* Upcoming Events */}
@@ -119,7 +130,7 @@ function Home() {
         </div>
       </div>
 
-      
+
     </>
   );
 }

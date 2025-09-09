@@ -59,7 +59,7 @@ function FreeCourses() {
             <div className="content">
               <h2>{course.name}</h2>
               <p>{course.description}</p>
-              <a href={`/${course.name.toLowerCase().replace(/\s+/g, '-')}.html`}>Details</a>
+              <a href={`/${course.name.toLowerCase().replace(/\s+/g, '-')}`}>Details</a>
             </div>
           </div>
         ))}

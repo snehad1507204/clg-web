@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedin, FaLocationDot, FaPhone, FaEnvelope, FaPaperPlane } from 'react-icons/fa6';
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedin, FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
 import Logo from "../assets/Logo.png";
 
 function Footer() {
@@ -71,13 +71,6 @@ function Footer() {
               <a href="https://www.linkedin.com/in/sw-narendra-singh-mahavidyalaya-83587a380?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BCMzBn0v%2FRyK%2FAKiaYT6PuQ%3D%3D" className="social-icon linkedin" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-            </div>
-            <div className="newsletter">
-              <h4>Newsletter</h4>
-              <div className="newsletter-input">
-                <input type="email" placeholder="Enter your email address" />
-                <button type="submit"><FaPaperPlane /></button>
-              </div>
             </div>
           </div>
         </div>
