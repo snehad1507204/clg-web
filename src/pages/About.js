@@ -7,9 +7,9 @@ const About = () => {
     <>
       <header className="about-header">
         <h1>About Us</h1>
-        <p className="para">Swargiya Narendra Singh Mahavidyalaya – Nurturing Minds, Building Futures</p>
+        <p className="about-para">Swargiya Narendra Singh Mahavidyalaya – Nurturing Minds, Building Futures</p>
       </header>
-      <div className="container">
+      <div className="about-container">
         {/* About Section */}
         <section className="about-section">
           <div className="about-text">
@@ -29,15 +29,15 @@ const About = () => {
         </section>
 
         {/* Mission and Vision */}
-        <section className="mission-vision">
-          <div className="card">
+        <section className="about-mission-vision">
+          <div className="about-card">
             <h3>Our Mission</h3>
             <p>
               To impart quality education that blends academic learning with real-world applications, fostering intellectual
               growth, moral values, and a spirit of social responsibility among students.
             </p>
           </div>
-          <div className="card">
+          <div className="about-card">
             <h3>Our Vision</h3>
             <p>
               To be recognized as a center of excellence in higher education, nurturing talent and promoting innovation
@@ -47,7 +47,7 @@ const About = () => {
         </section>
 
         {/* Core Values */}
-        <section className="values">
+        <section className="about-values">
           <h2>Our Core Values</h2>
           <ul>
             <li>Excellence in Teaching & Learning</li>

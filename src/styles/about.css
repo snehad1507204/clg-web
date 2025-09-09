@@ -1,157 +1,149 @@
 /* About Page Styles */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #f5f7fa;
-}
-
-/* Header */
+/* Header Section */
 .about-header {
-  background: #f5f7fa;
-  color: #0076A3;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
-  padding: 2% 1.5%;
-  margin-top: 9%;
+  margin-bottom: 40px;
 }
 
 .about-header h1 {
-  margin: 0;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.about-header .para {
-  font-size: 1.1rem;
-  margin: 1rem 0 0 0;
+.about-para {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.container {
-  max-width: 90%;
-  margin: auto;
-  padding: 4% 2%;
+/* Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* About section */
+/* About Section */
 .about-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4%;
+  display: flex;
   align-items: center;
-  margin-bottom: 6%;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.about-section img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: none !important;
-  transform: none !important;
+.about-text {
+  flex: 1;
+  min-width: 300px;
 }
 
 .about-text h2 {
-  font-size: 2rem;
-  color: #003366;
-  margin-bottom: 1.5%;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .about-text p {
-  text-align: justify;
-  margin-bottom: 1.2%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-/* Mission & Vision */
-.mission-vision {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3%;
-  margin-bottom: 6%;
+.about-section img {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  background: #fff;
-  padding: 3%;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  transition: none !important;
-  transform: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-  color: inherit !important;
+/* Mission and Vision Section */
+.about-mission-vision {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.card h3 {
-  color: #003366;
-  margin-bottom: 1.5%;
-}
-
-.card:hover h3 {
-  color: inherit !important;
-}
-
-/* Core Values */
-.values {
+.about-card {
+  flex: 1;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 6%;
 }
 
-.values h2 {
-  color: #003366;
-  margin-bottom: 2%;
+.about-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-.values ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5%;
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Core Values Section */
+.about-values {
+  margin-bottom: 60px;
+}
+
+.about-values h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-values ul {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.values li {
-  background: #fff;
-  padding: 1.5%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: none !important;
-  transform: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-  color: inherit !important;
+.about-values li {
+  background: #e8f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .about-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .mission-vision {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .values ul {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .about-header {
-    margin-top: 5%;
-    padding: 3% 1.5%;
-  }
-
   .about-header h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
-  .about-text h2 {
-    font-size: 1.8rem;
+  .about-para {
+    font-size: 1rem;
   }
 
-  .container {
-    padding: 2% 1%;
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-mission-vision {
+    flex-direction: column;
+  }
+
+  .about-values ul {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,19 +1,26 @@
-/* Home Page Styles */
-
-/* Hero Section */
-.hero-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5%;
+/* Top News Header */
+.headquote-container {
+  background: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+  overflow: hidden;
 }
 
-.hero-img img {
+.headquote {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Image */
+.heroImage{
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   display: block;
 }
 
-/* Main Content Container */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -24,223 +31,229 @@
   margin-top: 50px;
 }
 
+/* Main Sections */
 .main-sections {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-top: 140px; /* space for header+nav */
 }
 
-/* Remove home.css effects from specific components */
-.main-sections > div {
-  all: unset;
-}
-
-/* Card Styles */
+/* Cards */
 .card {
+  flex: 1 1 calc(33.33% - 20px);
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-bottom: 20px;
-  pointer-events: auto;
-}
-
-.card a {
-  color: inherit;
-  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-height: 350px;
 }
 
 .heading-sect {
-  border-bottom: 2px solid #007bff;
+  background: #00aed9;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 15px;
-  padding-bottom: 10px;
 }
 
 .head-title {
-  color: #333;
-  font-size: 1.5rem;
+  font-size: 18px;
   margin: 0;
-  font-weight: 600;
 }
 
-/* Latest News */
-.latest-news-ul {
+/* Lists */
+.latest-news-ul,
+.upcoming-event-list,
+.notice-board-list,
+.student-life,
+.college-campus-list {
   list-style: none;
+  font-size: 15px;
   padding: 0;
-  margin: 0;
 }
 
-.latest-news-ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 0.9rem;
-}
-
-.latest-news-ul li img {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-}
-
-/* Upcoming Events */
-.upcoming-event-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.latest-news-ul li,
+.notice-board-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .upcoming-event-list li {
+  margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  align-items: flex-start;
 }
 
 .event-date {
-  background: #007bff;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+  width: 50px;
   text-align: center;
-  font-weight: bold;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 0;
+  font-family: Arial, sans-serif;
   margin-right: 15px;
-  min-width: 60px;
+  display: inline-block;
+  font-size: 12px;
 }
 
-/* Notice Board */
-.notice-board-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.notice-board-list li {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.notice-board-list li img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-/* Student Life */
 .student-life {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 15px;
+  line-height: 2.9;
 }
 
-.student-life li {
-  padding: 8px 0;
-  position: relative;
-  padding-left: 20px;
-}
-
-.student-life li:before {
-  content: "✓";
-  color: #28a745;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-}
-
-/* College Campus and Facilities */
 .college-campus-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 15px;
+  line-height: 1.9;
 }
 
-.college-campus-list li {
-  padding: 8px 0;
-  line-height: 1.6;
-}
-
-/* Why Choose College Section */
+/* Why Choose College */
 .why-choose {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 60px 0;
+  background: #f9f9f9;
+  padding: 50px 0;
   text-align: center;
 }
 
 .why-choose h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .underline {
   width: 100px;
-  height: 4px;
-  background: white;
+  height: 3px;
+  background: #00aed9;
   margin: 0 auto 30px;
-  border-radius: 2px;
 }
 
 .why-choose p {
-  font-size: 1.1rem;
-  margin: 15px 0;
-  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.why-choose strong {
-  color: #ffd700;
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .main-sections {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-  }
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .main-sections {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
+.footer-col {
+  flex: 1 1 calc(25% - 30px);
+  min-width: 200px;
+}
 
-  .hero-img {
-    margin-bottom: 30px;
-  }
+.footer-branding {
+  text-align: center;
+}
 
-  .why-choose {
-    padding: 40px 20px;
-  }
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
 
-  .why-choose h2 {
-    font-size: 2rem;
-  }
+.footer-branding h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 
-  .container {
-    padding: 0 15px;
-  }
+.tagline {
+  font-style: italic;
+  color: #ccc;
+}
 
+.quick-links {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #00aed9;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #00aed9;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.copyright-container p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
   .card {
-    padding: 15px;
+    flex: 1 1 calc(50% - 20px);
+  }
+  .footer-col {
+    flex: 1 1 calc(50% - 30px);
   }
 }
 
-@media (max-width: 480px) {
-  .head-title {
-    font-size: 1.3rem;
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
   }
-
-  .why-choose h2 {
-    font-size: 1.8rem;
+  .footer-col {
+    flex: 1 1 100%;
   }
-
-  .event-date {
-    min-width: 50px;
-    padding: 8px;
-    font-size: 0.9rem;
+  .main-sections {
+    margin-top: 100px;
   }
 }
