@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedin, FaLocationDot, FaPhone, FaEnvelope, FaHouse, FaInfoCircle, FaGraduationCap, FaGift, FaPaperPlane, FaAward, FaUsers, FaBook, FaHandshake } from 'react-icons/fa6';
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedin, FaLocationDot, FaPhone, FaEnvelope, FaPaperPlane } from 'react-icons/fa6';
+import Logo from "../assets/Logo.png";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div className="footer-container">
           <div className="footer-col footer-branding">
             <div className="footer-logo-container">
-              <img src="/images/logo2.png" alt="College Logo" className="footer-logo" />
+              <img src={Logo}alt="College Logo" className="footer-logo" />
               <div className="logo-text">
                 <h3>Sw. Narendra Singh Mahavidyalaya</h3>
                 {/* <span className="college-type">Premier Educational Institution</span> */}

@@ -14,22 +14,28 @@ body {
 
 /* Page Header */
 .eligibility-header {
-  background: linear-gradient(135deg, #0056b3, #2196f3);
-  color: #fff;
+  background: #e5eaec;
+  color: #b81616;
   text-align: center;
-  padding: 20px, 20px;
-  /* margin-top: 70px; */
+  padding: 20px 20px;
+  /* margin-bottom: 170px; */
   width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .eligibility-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .eligibility-header p {
   font-size: 1.1rem;
+  color: black;
 }
 
 /* Container */
@@ -59,7 +65,7 @@ body {
 .eligibility-card h2 {
   font-size: 1.6rem;
   margin-bottom: 15px;
-  color: #0056b3;
+  color: #b81616;
 }
 
 .eligibility-card ul {
@@ -76,7 +82,7 @@ body {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #2196f3;
+  color: #b81616;
   font-weight: bold;
 }
 

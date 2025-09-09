@@ -18,20 +18,26 @@ body {
 .page-header {
   text-align: center;
   padding: 60px 20px 30px;
-  background: linear-gradient(rgba(162, 207, 252, 0.8), rgba(0, 51, 102, 0.8));
-  color: #fff;
+  background: #e5eaec;
+  color: #b81616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
 }
 
 .page-header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 15px;
-  margin-top: 40px;
+  text-align: center;
 }
 
 .page-header p {
   font-size: 1.1rem;
   max-width: 650px;
   margin: auto;
+  color: black;
 }
 
 /* ---------- Search + Filter ---------- */
@@ -111,7 +117,7 @@ body {
 
 .course-card a {
   display: inline-block;
-  background: #003366;
+  background: #b81616;
   color: #fff;
   padding: 10px 15px;
   border-radius: 8px;
@@ -119,6 +125,11 @@ body {
   transition: background 0.3s;
   align-self: center;
   margin-top: auto;
+}
+
+.course-card a:hover {
+  background: #ffdd57;
+  color: black;
 }
 
 

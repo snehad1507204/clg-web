@@ -24,7 +24,7 @@ body {
 .footer {
   background: #1a1a1a;
   color: #ccc;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, sans-serif; */
   line-height: 1.6;
 }
 
@@ -49,7 +49,7 @@ body {
   gap: 15px;
 }
 .footer-logo {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 .logo-text h3 {
@@ -64,7 +64,7 @@ body {
   text-align: center;
 }
 .tagline {
-  margin: 15px 0;
+  margin: 10px 0;
   font-size: 0.95rem;
   color: #aaa;
   text-align: center;
@@ -102,9 +102,9 @@ body {
 /* Contact Info */
 .contact-item {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
   margin-bottom: 12px;
   font-size: 0.95rem;
 }

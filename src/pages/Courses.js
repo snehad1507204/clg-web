@@ -4,10 +4,11 @@ import '../styles/courses.css';
 function Courses() {
   return (
     <main className="courses-container1">
-      <h1 className="page-title">Our Courses</h1>
-      <p className="intro-text">At Sw. Narendra Singh Mahavidyalaya, we offer quality education through well-structured
-        undergraduate programs that prepare students for academic excellence and professional success.</p>
-
+      <div className='page-title1'>
+        <h1 className="page-title">Our Courses</h1>
+        <p className="intro-text">At Sw. Narendra Singh Mahavidyalaya, we offer quality education through well-structured
+          undergraduate programs that prepare students for academic excellence and professional success.</p>
+      </div>
       <div className="courses-grid">
         {/* BA Course */}
         <section className="course-card">

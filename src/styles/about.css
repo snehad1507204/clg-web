@@ -2,15 +2,15 @@
 
 /* Header Section */
 .about-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #e5eaec;
+  color: #b81616;
   padding: 60px 20px;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .about-header h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -20,6 +20,7 @@
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
+  color: black;
 }
 
 /* Container */
@@ -44,8 +45,8 @@
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #b81616;
   margin-bottom: 20px;
 }
 
@@ -84,7 +85,7 @@
 
 .about-card h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #b81616;
   margin-bottom: 15px;
 }
 
@@ -101,7 +102,7 @@
 
 .about-values h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: #b81616;
   text-align: center;
   margin-bottom: 30px;
 }
