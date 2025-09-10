@@ -9,9 +9,11 @@ import Eligibility from './pages/Eligibility';
 import Admission from './pages/Admission';
 import Faculty from './pages/Faculty';
 import FreeCourses from './pages/FreeCourses';
-import ComputerBasics from './pages/ComputerBasics';
-import EnglishSpeaking from './pages/EnglishSpeaking';
 import Contact from './pages/Contact';
+import NCC from './pages/NCC';
+import Scholarship from './pages/Scholarship';
+import AdmissionProcess from './pages/AdmissionProcess';
+import AdmissionQuery from './pages/AdmissionQuery';
 import './styles/main.css';
 
 function App() {
@@ -26,12 +28,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/eligibility" element={<Eligibility />} />
-            <Route path="/admission" element={<Admission />} />
+            <Route path="/admissionprocess" element={<AdmissionProcess />} />
+            <Route path="/admissionquery" element={<AdmissionQuery />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/free-courses" element={<FreeCourses />} />
-            <Route path="/computer-basics" element={<ComputerBasics />} />
-            <Route path="/english-speaking" element={<EnglishSpeaking />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/ncc" element={<NCC />} />
+            <Route path="/scholarship" element={<Scholarship />} />
           </Routes>
         </main>
         <Footer />
