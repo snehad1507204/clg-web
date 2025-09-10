@@ -37,10 +37,10 @@ const Navbar = () => {
           <ul className={`dropdown-menu ${admissionOpen ? "show" : ""}`}>
             <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/eligibility">Eligibility</Link></li>
-            <li><Link to="/admission">Admission Process</Link></li>
-            <li><Link to="/admission">Admission Query</Link></li>
-            <li><Link to="/admission">Scholarship</Link></li>
-            <li><Link to="/admission">NCC</Link></li>
+            <li><Link to="/admissionprocess">Admission Process</Link></li>
+            <li><Link to="/admissionquery">Admission Query</Link></li>
+            <li><Link to="/scholarship">Scholarship</Link></li>
+            <li><Link to="/ncc">NCC</Link></li>
           </ul>
         </li>
 
