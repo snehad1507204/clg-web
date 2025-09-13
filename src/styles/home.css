@@ -25,8 +25,8 @@
 }
 
 @keyframes scroll-text {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-60%); }
 }
 
 /* For vertical news ticker */
@@ -50,16 +50,9 @@
 }
 
 /* Hero Image */
-.hero-img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
 .hero-img img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   display: block;
 }
@@ -123,12 +116,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  text-align: left;
 }
 
 .upcoming-event-list li {
   margin-bottom: 10px;
   display: flex;
-  align-items: flex-start;
+  align-items:center;
+  text-align: center;
 }
 
 .event-date {
@@ -147,11 +142,13 @@
 .student-life {
   padding-left: 15px;
   line-height: 2.9;
+  text-align: left;
 }
 
 .college-campus-list {
   padding-left: 15px;
   line-height: 1.9;
+  text-align: left;
 }
 
 /* Why Choose College */
@@ -179,6 +176,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 /* Footer */
@@ -281,30 +279,15 @@
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
-  .hero-img {
-    height: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-img {
-    height: 250px;
-  }
-}
-
 @media (max-width: 992px) {
   .card {
     flex: 1 1 calc(50% - 20px);
   }
   .footer-col {
     flex: 1 1 calc(50% - 30px);
+  }
+  .hero-img img {
+    height: 300px;
   }
 }
 
@@ -317,5 +300,8 @@
   }
   .main-sections {
     margin-top: 100px;
+  }
+  .hero-img img {
+    height: 200px;
   }
 }

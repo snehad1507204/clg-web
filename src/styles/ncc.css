@@ -1,4 +1,4 @@
- :double-button/* =====================
+:double-button/* =====================
    RESET + GLOBAL STYLES
 ===================== */
 .ncc-page * {
@@ -514,4 +514,85 @@
   background: #ff5722;
   margin: 10px auto 0;
   border-radius: 5px;
+}
+
+/* Form Section */
+.ncc-query-section {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Form Groups */
+.enquiry-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.enquiry-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Inputs & Textarea */
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border-color: #b81616;
+  box-shadow: 0 0 6px rgba(184, 22, 22, 0.4);
+}
+
+/* Error Messages */
+.error {
+  border-color: #e74c3c !important;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background: #b81616;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #9f1313;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/home.css';
-import heroImage from '../assets/hero.jpg';
+import heroImage from '../images/slider1.png';
 import newGif from '../images/new.gif';
 import noticeImg from '../images/notice-board-img.png';
 
@@ -19,9 +19,7 @@ function Home() {
       <div className="headquote-container">
         <div className="headquote-scroll">
           <p>
-            Education is the key to success, and at Sw. Narendra Singh Mahavidyalaya we unlock every
-            student's potential. Education is the most powerful weapon which you can use to change
-            the world.
+            Education is the key to success, and at Sw. Narendra Singh Mahavidyalaya we unlock every student's potential. We believe in nurturing minds and building bright futures. Education is the most powerful weapon which you can use to change the world. Our mission is to provide quality education, inspire creativity, and empower students to achieve their dreams. At Sw. Narendra Singh Mahavidyalaya, we cultivate knowledge, values, and skills that prepare students for lifelong success.
           </p>
         </div>
       </div>
@@ -58,9 +56,9 @@ function Home() {
             <h3 className="head-title">Upcoming Events</h3>
           </div>
           <ul className="upcoming-event-list">
-            <li><span className="event-date">24 <br /> Sep</span> Seminar on B.Sc courses</li>
-            <li><span className="event-date">26 <br /> Sep</span> Seminar on B.A courses</li>
-            <li><span className="event-date">28 <br /> Sep</span> Seminar on B.Ed courses</li>
+            <li><span className="event-date">coming <br /> Soon</span> Seminar on B.Sc courses</li>
+            <li><span className="event-date">Coming<br /> Soon</span> Seminar on B.A courses</li>
+            <li><span className="event-date">Coming <br /> Soon</span> Seminar on B.Ed courses</li>
             <li><span className="event-date">28 <br /> Oct</span> 2nd Convocation Ceremony</li>
           </ul>
         </div>

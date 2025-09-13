@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/ncc.css';
 
 // import ncc1 from '../images/ncc1.jpeg';
@@ -9,6 +9,56 @@ import '../styles/ncc.css';
 // import ncc8 from '../images/ncc8.jpeg';
 
 function NCC() {
+    const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    course: '',
+    message: ''
+  });
+
+  const [formErrors, setFormErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!formData.name.trim()) errors.name = 'Name is required';
+    if (!formData.email.trim()) {
+      errors.email = 'Email is required';
+    } else {
+      // Basic email regex validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formData.email)) {
+        errors.email = 'Invalid email address';
+      }
+    }
+    if (!formData.phone.trim()) errors.phone = 'Phone number is required';
+    if (!formData.message.trim()) errors.message = 'Message is required';
+    return errors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const errors = validate();
+    setFormErrors(errors);
+    if (Object.keys(errors).length === 0) {
+      alert("✅ Your NCC query has been submitted successfully!");
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        course: '',
+        message: ''
+      });
+    }
+  };
   return (
     <div className="ncc-page">
       <div className="container">
@@ -24,7 +74,7 @@ function NCC() {
             <span className="ncc-icon">🎖️</span>
           </div>
           <button className="ncc-top-bar-link" onClick={() => window.open('https://nis.bisag-n.gov.in', '_blank')}>
-            Visit 
+            Visit
           </button>
         </div>
 
@@ -192,6 +242,89 @@ function NCC() {
               <div className="caption">Guest Lecture</div>
             </div>
           </div>
+        </section>
+        {/* NCC Query Form Section */}
+        <section className="ncc-query-section">
+          <h2 className="form-title">NCC Query Form</h2>
+          <form className="enquiry-form" onSubmit={handleSubmit} noValidate>
+
+            {/* Full Name */}
+            <div className="form-group">
+              <label htmlFor="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className={formErrors.name ? 'error' : ''}
+                placeholder="Enter your full name"
+              />
+              {formErrors.name && <span className="error-message">{formErrors.name}</span>}
+            </div>
+
+            {/* Email */}
+            <div className="form-group">
+              <label htmlFor="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={formErrors.email ? 'error' : ''}
+                placeholder="Enter your email address"
+              />
+              {formErrors.email && <span className="error-message">{formErrors.email}</span>}
+            </div>
+
+            {/* Phone */}
+            <div className="form-group">
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className={formErrors.phone ? 'error' : ''}
+                placeholder="Enter your phone number"
+              />
+              {formErrors.phone && <span className="error-message">{formErrors.phone}</span>}
+            </div>
+
+            {/* Course / Class */}
+            <div className="form-group">
+              <label htmlFor="course">Current Course</label>
+              <input
+                type="text"
+                id="course"
+                name="course"
+                value={formData.course}
+                onChange={handleChange}
+                className={formErrors.course ? 'error' : ''}
+                placeholder="Enter your current course or class (e.g. B.A., B.Sc.)"
+              />
+              {formErrors.course && <span className="error-message">{formErrors.course}</span>}
+            </div>
+            {/* Message */}
+            <div className="form-group">
+              <label htmlFor="message">Message / Query</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                className={formErrors.message ? 'error' : ''}
+                placeholder="Enter your message or query"
+              />
+              {formErrors.message && <span className="error-message">{formErrors.message}</span>}
+            </div>
+
+            {/* Submit */}
+            <button type="submit" className="submit-button">Submit</button>
+          </form>
         </section>
       </div>
     </div>

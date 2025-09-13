@@ -1,11 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [admissionOpen, setAdmissionOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setAdmissionOpen(false);
+  }, [location]);
 
   return (
     <>
@@ -25,8 +30,8 @@ const Navbar = () => {
 
       {/* Menu */}
       <ul className={`menu ${menuOpen ? "active" : ""}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
 
         {/* Dropdown */}
         <li className="dropdown">
@@ -35,18 +40,18 @@ const Navbar = () => {
               setAdmissionOpen(!admissionOpen);
             }}>Admission▾</a>
           <ul className={`dropdown-menu ${admissionOpen ? "show" : ""}`}>
-            <li><Link to="/courses">Courses</Link></li>
-            <li><Link to="/eligibility">Eligibility</Link></li>
-            <li><Link to="/admissionprocess">Admission Process</Link></li>
-            <li><Link to="/admissionquery">Admission Query</Link></li>
-            <li><Link to="/scholarship">Scholarship</Link></li>
-            <li><Link to="/ncc">NCC</Link></li>
+            <li><Link to="/courses" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>Courses</Link></li>
+            <li><Link to="/eligibility" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>Eligibility</Link></li>
+            <li><Link to="/admissionprocess" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>Admission Process</Link></li>
+            <li><Link to="/admissionquery" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>Admission Query</Link></li>
+            <li><Link to="/scholarship" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>Scholarship</Link></li>
+            <li><Link to="/ncc" onClick={() => {setMenuOpen(false); setAdmissionOpen(false);}}>NCC</Link></li>
           </ul>
         </li>
 
-        <li><Link to="/free-courses">Free Courses</Link></li>
-        <li><Link to="/faculty">Faculty</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/free-courses" onClick={() => setMenuOpen(false)}>Free Courses</Link></li>
+        <li><Link to="/faculty" onClick={() => setMenuOpen(false)}>Faculty</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
     </>

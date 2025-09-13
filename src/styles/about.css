@@ -8,10 +8,9 @@
   background: #daeef7;
   color: #b81616;
   border-radius: 20px;
-  max-width: calc(100% - 40px);
+  width: 100%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 .about-header h1 {
@@ -132,12 +131,16 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .about-section {
-    gap: 30px;
+  .about-header h1 {
+    font-size: 2.2rem;
   }
 
-  .about-text h2 {
-    font-size: 2rem;
+  .about-para {
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    gap: 30px;
   }
 
   .about-section img {
@@ -148,8 +151,17 @@
     gap: 30px;
   }
 
+  .about-card {
+    padding: 25px;
+  }
+
   .about-values h2 {
     font-size: 2.2rem;
+  }
+
+  .about-values li {
+    padding: 18px;
+    font-size: 1rem;
   }
 }
 
@@ -168,43 +180,21 @@
     gap: 20px;
   }
 
-  .about-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .about-section img {
-    max-width: 100%;
-  }
-
   .about-mission-vision {
     flex-direction: column;
     gap: 20px;
   }
 
-  .about-card {
-    padding: 20px;
-  }
-
-  .about-values h2 {
-    font-size: 2rem;
-  }
-
   .about-values ul {
     grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .about-values li {
-    padding: 15px;
-    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-header {
     padding: 30px 15px;
-    margin-left: 10px;
-    max-width: calc(100% - 20px);
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 
   .about-header h1 {
@@ -212,7 +202,7 @@
   }
 
   .about-para {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .about-container {
@@ -224,16 +214,23 @@
   }
 
   .about-text h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
   }
 
   .about-text p {
     font-size: 1rem;
   }
 
+  .about-section img {
+    max-width: 100%;
+  }
+
   .about-mission-vision {
     margin-bottom: 40px;
+  }
+
+  .about-card {
+    padding: 20px;
   }
 
   .about-card h3 {
@@ -249,8 +246,42 @@
   }
 
   .about-values h2 {
+    font-size: 2rem;
+  }
+
+  .about-values li {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-para {
+    font-size: 0.9rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
+  .about-values h2 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
   }
 
   .about-values li {

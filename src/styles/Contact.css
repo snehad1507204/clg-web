@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.para {
+.para1 {
   font-size: 1em;
   margin: 10px 0;
   color: #666;
@@ -39,6 +39,35 @@
   font-size: 1em;
   color: #777;
 }
+
+.phone-link {
+  color: #333;       /* Blue color */
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #0056b3;       /* Darker blue on hover */
+  text-decoration: none;
+}
+
+/* Email Link Style */
+.para {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #333;        
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.para:hover {
+  color: #0056b3;       
+  text-decoration: none;
+}
+
 
 .contactForm {
   display: flex;

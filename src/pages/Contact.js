@@ -46,7 +46,7 @@ function Contact() {
 
   return (
     <>
-      <h1 className="sectionHeader">Contact us</h1>
+      <h4 className="sectionHeader">Contact us</h4>
 
       <section>
         <h1 className="heading">Get in touch</h1>
@@ -55,7 +55,7 @@ function Contact() {
         <div className="contactForm">
           <form id="contactForm" onSubmit={handleSubmit}>
             <h1 className="sub-heading">Need Support!</h1>
-            <p className="para para2">Contact us for a quote, help to join the team.</p>
+            <p className="para1 para2">Contact us </p>
             <input type="text" name="name" className="input" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
             <input type="email" name="email" className="input" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
             <input type="text" name="phone" className="input" placeholder="Your Mobile Number" value={formData.phone} onChange={handleChange} required />
@@ -81,25 +81,53 @@ function Contact() {
             <i className="fa-solid fa-location-dot contactIcon"></i>
             <article className="text">
               <h1 className="sub-heading">Location</h1>
-              <p className="para">Sw. Narendra Singh Mahavidyalaya, Gajner, Kanpur Dehat</p>
+
+              <a
+                href="https://www.google.com/maps?q=Sw.+Narendra+Singh+Mahavidyalaya,+Gajner,+Kanpur+Dehat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="para"
+              >
+                Sw. Narendra Singh Mahavidyalaya, Gajner, Kanpur Dehat
+              </a>
+
               <p className="para">Adjacent to the Gajner Police Station.</p>
+
+              <a
+                href="https://maps.app.goo.gl/rGPqUBjwozXJ1SM98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="para"
+              >
+                Patel Sadan Guest House, near Oriental Hospital, W-2, Damodar Nagar, Kanpur, Uttar Pradesh, India
+              </a>
             </article>
+
           </div>
 
           <div className="method">
-            <i className="fa-solid fa-envelope contactIcon"></i>
-            <article className="text">
-              <h1 className="sub-heading">Email</h1>
-              <p className="para">snsmv25@gmail.com</p>
-            </article>
+            <div className="method">
+              <i className="fa-solid fa-envelope contactIcon"></i>
+              <article className="text">
+                <h1 className="sub-heading">Email</h1>
+                <a href="mailto:snsmv25@gmail.com" className="para">
+                  snsmv25@gmail.com
+                </a>
+              </article>
+            </div>
+
           </div>
 
           <div className="method">
             <i className="fa-solid fa-phone contactIcon"></i>
             <article className="text">
               <h1 className="sub-heading">Phone</h1>
-              <p className="para">+91 8851955753, +91 8851955596</p>
+              <p className="para">
+                <a href="tel:+918851955753" className="phone-link">+91 8851955753</a><br />
+                <a href="tel:+918851955596" className="phone-link">+91 8851955596</a>
+              </p>
             </article>
+
           </div>
         </div>
       </section>
