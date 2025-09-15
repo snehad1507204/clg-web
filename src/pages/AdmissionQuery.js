@@ -48,9 +48,11 @@ function AdmissionQuery() {
 
   return (
     <section className="admission-form">
-      <div className="container">
-        <h2 className="page-title">Admission Enquiry</h2>
-        <p className="para">Fill in your details and our team will connect with you shortly.</p>
+      <div>
+        <div className="page-title">
+        <h1>Admission Enquiry</h1>
+        <p className="para1">Fill in your details and our team will connect with you shortly.</p>
+        </div>
         <form id="enquiryForm" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name *</label>

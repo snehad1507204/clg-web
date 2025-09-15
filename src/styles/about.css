@@ -3,14 +3,7 @@
 /* Header Section */
 .about-header {
   text-align: center;
-  margin-bottom: 50px;
-  padding: 40px 20px;
-  background: #daeef7;
   color: #b81616;
-  border-radius: 20px;
-  width: 100%;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
 }
 
 .about-header h1 {

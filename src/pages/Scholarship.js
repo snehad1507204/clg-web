@@ -6,7 +6,7 @@ function Scholarship() {
     <>
       <section className="scholarship-header">
         <h1>Scholarship & Financial Aid</h1>
-        <p className="para">Supporting students in achieving academic excellence with financial assistance</p>
+        <p className="para1">Supporting students in achieving academic excellence with financial assistance</p>
       </section>
 
       <section className="scholarship-container">

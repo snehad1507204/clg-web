@@ -5,31 +5,26 @@ body {
 }
 
 .admission-section2 {
-  text-align: center;
-  margin-bottom: 50px;
-  padding: 40px 20px;
-  background: #daeef7;
-  color: #b81616;
-  border-radius: 20px;
-  max-width: calc(100% - 40px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 .admission-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 1.5%;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   color: #b81616;
 }
 
 .admission-section p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
   color: black;
-  margin-bottom: 4%;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.admission-section2 p {
+  margin-bottom: 50px;
 }
 
 /* Cards Layout */
@@ -96,7 +91,11 @@ body {
 
   .admission-section p {
     font-size: 1em;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
+  }
+
+  .admission-section2 p {
+    margin-bottom: 50px;
   }
 
   /* Force vertical stack */
@@ -105,15 +104,20 @@ body {
   }
 
   .process-card img {
-    height: 16vh;
+    height: 20vh;
+  }
+
+  .process-card {
+    height: 300px;
+    margin-bottom: 40px;
   }
 
   .process-content h3 {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
 
   .process-content p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -126,20 +130,25 @@ body {
     font-size: 1.8em;
   }
 
+  .admission-section2 p {
+    margin-bottom: 40px;
+  }
+
   .process-container {
     gap: 1.5%;
-    grid-template-columns: 1fr; /* small screens vertical */
+    grid-template-columns: 1fr;
+    /* small screens vertical */
   }
 
   .process-card img {
-    height: 14vh;
+    height: 15vh;
   }
 
   .process-content h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .process-content p {
-    font-size: 0.9em;
+    font-size: 0.98em;
   }
 }
