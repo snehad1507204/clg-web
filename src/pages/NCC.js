@@ -9,7 +9,7 @@ import '../styles/ncc.css';
 // import ncc8 from '../images/ncc8.jpeg';
 
 function NCC() {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
@@ -210,6 +210,24 @@ function NCC() {
               <h3>Social Service</h3>
               <p>Tree plantation, cleanliness drives, and awareness programs.</p>
             </div>
+          </div>
+        </section>
+
+        {/* NCC Scholarship Section */}
+        <section>
+          <div className="highlight">NCC Scholarship – Rewarding Excellence</div>
+          <div className="scholarship-highlight">
+            <h2>NCC Scholarship</h2>
+            <p>
+              NCC provides scholarships to recognize and support cadets who excel in academics,
+              social service, and NCC activities. These scholarships help in motivating students
+              towards leadership, discipline, and national service.
+            </p>
+            <ul>
+              <li>💰 Merit Scholarship – ₹ 4,000 per year for outstanding cadets</li>
+            <li>Support for higher education & professional courses</li>
+            <li>Awards for outstanding performance in NCC camps & activities</li>
+            </ul>
           </div>
         </section>
 

@@ -31,7 +31,7 @@ function Eligibility() {
           <h2>Bachelor of Science (B.Sc.)</h2>
           <ul>
             <li>Candidate must have passed 10+2 (Intermediate) with Science (PCM/PCB) from a recognized board.</li>
-            <li>Minimum 45% marks in aggregate (40% for reserved category as per norms).</li>
+            <li>Minimum 50% marks in aggregate (45% for reserved category as per norms).</li>
             <li>Preference will be given to students with strong academic background in Science.</li>
             <li>Admission will be based on merit and availability of seats.</li>
           </ul>

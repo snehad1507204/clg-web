@@ -54,8 +54,7 @@ function Contact() {
 
         <div className="contactForm">
           <form id="contactForm" onSubmit={handleSubmit}>
-            <h1 className="sub-heading">Need Support!</h1>
-            <p className="para1 para2">Contact us </p>
+            <h1 className="para1 para2">Contact us </h1>
             <input type="text" name="name" className="input" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
             <input type="email" name="email" className="input" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
             <input type="text" name="phone" className="input" placeholder="Your Mobile Number" value={formData.phone} onChange={handleChange} required />
@@ -74,6 +73,16 @@ function Contact() {
               </iframe>
             </div>
           </div>
+          <div className="map-container">
+            <div className="mapBg"></div>
+            <div className="map">
+              <iframe
+                title="College Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.0979540143526!2d80.308132!3d26.420635200000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47a673e7dc7b%3A0x9c6a6fa4ce34a8c3!2sSw.%20Narendra%20Singh%20Mahavidyalaya%2C%20Kanpur%20City%2C%20Office!5e1!3m2!1sen!2sin!4v1758082126064!5m2!1sen!2sin"
+                style={{ border: 0, width: '100%', height: '100%' }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
         </div>
 
         <div className="contactMethod">
@@ -88,7 +97,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="para"
               >
-                Sw. Narendra Singh Mahavidyalaya, Gajner, Kanpur Dehat
+                <strong>College Center:- </strong>Sw. Narendra Singh Mahavidyalaya, Gajner, Kanpur Dehat
               </a>
 
               <p className="para">Adjacent to the Gajner Police Station.</p>
@@ -99,7 +108,7 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="para"
               >
-                Patel Sadan Guest House, near Oriental Hospital, W-2, Damodar Nagar, Kanpur, Uttar Pradesh, India
+               <strong>City Center:- </strong> W2, 1364A, near patel sadan guset house, Damodar Nagar, Kanpur, Uttar Pradesh 208027
               </a>
             </article>
 

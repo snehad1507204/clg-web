@@ -111,6 +111,12 @@
   background: #0056b3;
 }
 
+/* .maps-wrapper {
+  display: flex;
+  flex-direction: column; /* vertical stack */
+  /* gap: 20px;  
+}  */
+
 .map-container {
   flex: 1;
   position: relative;
